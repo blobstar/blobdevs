@@ -9,14 +9,18 @@
             <link href="codemirror/theme/dracula.css" rel="stylesheet"/>
         </head>
         <body>
-           <textarea id="editor"><p>I am a humbler paragraph.</p></textarea>
-           <script>
+            <div id="header">
+                <a id="blobLogo"><img src="/images/blobAsset 4green.png"></a>
+            </div>
+
+            <textarea id="editor"><p>I am a humble paragraph.</p></textarea>
+            <script>
                var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
                    mode: "xml",
                    theme: "dracula",
                    lineNumbers: true,
                    autoCloseTags: true
                });
-           </script> 
+            </script> 
         </body>
     </html>
